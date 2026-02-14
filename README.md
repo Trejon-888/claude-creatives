@@ -190,21 +190,29 @@ Both repos use **Late** as the bridge for media storage and multi-platform posti
 
 ```
 claude-canvas/
-├── README.md
-├── CLAUDE.md
-├── setup.md
-├── .claude/
-│   └── skills/
-│       ├── thumbnail-creator/
-│       │   └── SKILL.md
-│       ├── carousel-generator/
-│       │   └── SKILL.md
-│       └── document-carousel/
-│           └── SKILL.md
-└── images/
-    ├── thumbnails/
-    └── carousel/
+├── README.md                        # This file
+├── CLAUDE.md                        # Instructions for Claude Code
+├── setup.md                         # Step-by-step setup guide
+│
+├── .claude/skills/                  # The 3 skills
+│   ├── thumbnail-creator/SKILL.md   # YouTube thumbnail generation
+│   ├── carousel-generator/SKILL.md  # AI image carousel generation
+│   └── document-carousel/SKILL.md   # HTML → PDF → PNG carousel
+│
+├── output/                          # All generated content (auto-organized)
+│   ├── thumbnails/                  # YouTube thumbnails by video
+│   ├── carousels/                   # AI carousel slides by topic
+│   ├── documents/                   # Document carousels (HTML + PDF + pages)
+│   └── posts/                       # Mixed-format posts (Gary Vee style, etc.)
+│
+├── references/                      # Style inspiration
+│   ├── carousel-styles/             # Pinterest saves, Instagram screenshots
+│   └── thumbnail-styles/            # YouTube thumbnail references
+│
+└── images/                          # Repo assets (header image, etc.)
 ```
+
+Every project folder in `output/` uses the naming convention `YYYY-MM-DD-descriptive-slug` and includes a `prompts.json` for easy regeneration.
 
 ---
 

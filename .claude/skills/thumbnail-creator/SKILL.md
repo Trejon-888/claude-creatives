@@ -418,15 +418,15 @@ THUMBNAIL OPTIONS
 =================
 
 Concept 1: "{Name}"
-   File: images/thumbnails/{video-slug}/concept-1.png
+   File: output/thumbnails/{video-slug}/concept-1.png
    Text: {the text on it}
 
 Concept 2: "{Name}"
-   File: images/thumbnails/{video-slug}/concept-2.png
+   File: output/thumbnails/{video-slug}/concept-2.png
    Text: {the text on it}
 
 Concept 3: "{Name}"
-   File: images/thumbnails/{video-slug}/concept-3.png
+   File: output/thumbnails/{video-slug}/concept-3.png
    Text: {the text on it}
 ```
 
@@ -449,7 +449,7 @@ If user wants changes:
 ### File Organization
 
 ```
-images/thumbnails/
+output/thumbnails/
 └── {video-slug}/
     ├── concept-1.png
     ├── concept-2.png
@@ -461,7 +461,7 @@ images/thumbnails/
 
 ### Prompts Archive
 
-Save to `images/thumbnails/{video-slug}/prompts.json`:
+Save to `output/thumbnails/{video-slug}/prompts.json`:
 ```json
 {
   "metadata": {
@@ -531,7 +531,7 @@ LATE_API_KEY: (environment variable, for storage uploads)
 ### File Paths
 ```
 Face assets:  .claude/skills/thumbnail-creator/assets/{creator}/face-reference.png
-Output:       images/thumbnails/{video-slug}/
+Output:       output/thumbnails/{video-slug}/
 ```
 
 ### Cost Per Thumbnail Session

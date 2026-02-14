@@ -1,0 +1,18 @@
+# Environment
+.env
+
+# Generated output (keep structure, ignore content)
+output/thumbnails/*/
+output/carousels/*/
+output/documents/*/
+output/posts/*/
+
+# Keep folder structure
+!output/thumbnails/.gitkeep
+!output/carousels/.gitkeep
+!output/documents/.gitkeep
+!output/posts/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db

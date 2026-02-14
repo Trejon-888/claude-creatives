@@ -162,11 +162,11 @@ And on the final CTA page, centered at the bottom:
 
 ### File Location
 
-Save to: `images/carousel/{topic-slug}/`
+Save to: `output/documents/{topic-slug}/`
 - HTML: `{topic-slug}.html`
 - PDF: `{topic-slug}.pdf`
 
-**RULE:** Always use the existing `images/carousel/` directory. Never create a new carousel folder elsewhere.
+**RULE:** Always use the existing `output/documents/` directory. Never create a new carousel folder elsewhere.
 
 ---
 
@@ -222,7 +222,7 @@ for i, page in enumerate(doc):
     pix.save(f"pages/page-{i+1}.png")
 ```
 
-Save to: `images/carousel/{topic-slug}/pages/`
+Save to: `output/documents/{topic-slug}/pages/`
 
 ### Create slideshow video (optional, for YouTube/video platforms)
 

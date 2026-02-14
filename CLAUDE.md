@@ -84,27 +84,52 @@ Or add them to a `.env` file in the project root (never commit this file).
 
 ## File Organization
 
-Generated content is automatically organized:
+All generated content goes into `output/`, organized by type and date:
 
 ```
-images/
-├── thumbnails/
-│   └── {video-slug}/
-│       ├── concept-1.png
-│       ├── concept-2.png
-│       ├── concept-3.png
-│       ├── final.png
-│       └── prompts.json
-└── carousel/
-    └── {topic-slug}/
-        ├── {topic-slug}.html
-        ├── {topic-slug}.pdf
-        ├── pages/
-        │   ├── page-1.png
-        │   ├── page-2.png
-        │   └── ...
-        └── {topic-slug}-prompts.json
+output/
+├── thumbnails/                      # YouTube thumbnails
+│   └── YYYY-MM-DD-video-slug/       # One folder per video
+│       ├── concept-1.png            # Option A
+│       ├── concept-2.png            # Option B
+│       ├── concept-3.png            # Option C
+│       ├── final.png                # Selected + face-corrected
+│       └── prompts.json             # AI prompts (for regeneration)
+│
+├── carousels/                       # AI-generated image carousels
+│   └── YYYY-MM-DD-topic-slug/       # One folder per carousel
+│       ├── slide-01.png
+│       ├── slide-02.png
+│       └── prompts.json             # Prompts per slide (for regeneration)
+│
+├── documents/                       # Document carousels (HTML → PDF → PNG)
+│   └── YYYY-MM-DD-topic-slug/
+│       ├── source.html              # Original HTML
+│       ├── document.pdf             # Rendered PDF
+│       ├── pages/                   # Extracted page images
+│       │   ├── page-01.png
+│       │   └── ...
+│       └── metadata.json            # Outline, pages, platforms posted
+│
+└── posts/                           # Mixed-format posts (Gary Vee style, etc.)
+    └── YYYY-MM-DD-post-slug/
+        ├── hook-image.png           # Image hook (first carousel slide)
+        ├── video.mp4                # Video component (if applicable)
+        └── metadata.json            # Platform, caption, hashtags, post URL
 ```
+
+**Naming convention:** Always use `YYYY-MM-DD-descriptive-slug` for project folders.
+
+**References:** Style inspiration images go in `references/`:
+```
+references/
+├── carousel-styles/     # Pinterest saves, Instagram screenshots
+└── thumbnail-styles/    # YouTube thumbnail references
+```
+
+When the user says "use the style from references/carousel-styles/clean-minimal.png", analyze that image and match the visual style.
+
+**Regeneration:** Every project folder includes `prompts.json` or `metadata.json` with the exact prompts and settings used. When asked to regenerate, read the saved prompts and re-run.
 
 ---
 

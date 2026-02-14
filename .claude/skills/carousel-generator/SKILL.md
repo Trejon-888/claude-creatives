@@ -101,7 +101,7 @@ Ask the user:
 
 Create organized structure:
 ```bash
-mkdir -p "images/carousel/{carousel-slug}"
+mkdir -p "output/carousels/{carousel-slug}"
 ```
 
 **RULE:** Always use kebab-case for folder names.
@@ -154,7 +154,7 @@ Even if cards are rotated, text INSIDE cards must remain perfectly horizontal.
 
 ### Save Prompts
 
-Write to: `images/carousel/{carousel-slug}/{carousel-slug}-prompts.json`
+Write to: `output/carousels/{carousel-slug}/{carousel-slug}-prompts.json`
 
 Structure:
 ```json
@@ -241,7 +241,7 @@ Response on success:
 Extract URL: `JSON.parse(data.resultJson).resultUrls[0]`
 
 3. **Download & Save:**
-- Save to: `images/carousel/{carousel-slug}/{number:02d}-{slide-slug}.png`
+- Save to: `output/carousels/{carousel-slug}/{number:02d}-{slide-slug}.png`
 
 4. **Progress Updates:**
 ```
@@ -256,7 +256,7 @@ Slide X: {name}
 ### File Organization
 
 ```
-images/carousel/
+output/carousels/
 └── {carousel-slug}/
     ├── 01-slide-name.png
     ├── 02-slide-name.png
@@ -318,7 +318,7 @@ Summary:
 - Format: PNG
 - Cost: ~$X.XX
 
-Files: images/carousel/{carousel-slug}/
+Files: output/carousels/{carousel-slug}/
 
 Ready to post!
 ```
