@@ -1,6 +1,6 @@
 # Setup Guide
 
-A step-by-step guide to get Claude Canvas running on your machine.
+A step-by-step guide to get Claude Creatives running on your machine.
 
 ---
 
@@ -35,8 +35,8 @@ If you don't already have one:
 Open a terminal and run:
 
 ```bash
-git clone https://github.com/Trejon-888/claude-canvas.git
-cd claude-canvas
+git clone https://github.com/Trejon-888/claude-creatives.git
+cd claude-creatives
 ```
 
 Then open the folder in VS Code:
@@ -133,14 +133,13 @@ export KIE_API_KEY="your-kie-api-key-here"
 export LATE_API_KEY="your-late-api-key-here"
 ```
 
-**Using a .env file:**
-Create a `.env` file in the project root:
+**Using the .env file (recommended):**
+The repo includes a `.env` file — just replace the placeholder with your real key:
 ```
 KIE_API_KEY=your-kie-api-key-here
-LATE_API_KEY=your-late-api-key-here
 ```
 
-> **Important:** Never commit your `.env` file to git. Add it to `.gitignore`.
+> **Note:** The `.env` file is already in `.gitignore` so your key won't be committed.
 
 ### Set Up Your Face Reference (for Thumbnails)
 

@@ -1,10 +1,10 @@
-# Claude Canvas
+# Claude Creatives
 
 **AI-Powered Visual Content Creation for Claude Code**
 
 > 3 Claude Code skills that turn your terminal into a design studio — thumbnails, carousels, and document posts, all from a single prompt.
 
-![Claude Canvas Header](images/header.png)
+![Claude Creatives Header](images/header.png)
 
 ---
 
@@ -21,12 +21,12 @@ In Part 1 — [IX AI Agent Social Media Manager](https://github.com/Trejon-888/i
 > If you haven't watched Part 1, I recommend starting there — this is a continued conversation from that system.
 > [Watch: Claude Code now Manages ALL my Social Media on Autopilot](https://www.youtube.com/watch?v=64TTSZcSR9c)
 
-**Claude Canvas picks up where Part 1 left off.** Part 1 handles distribution. Part 2 handles **creation** — the visual assets you need before you can post anything.
+**Claude Creatives picks up where Part 1 left off.** Part 1 handles distribution. Part 2 handles **creation** — the visual assets you need before you can post anything.
 
 Together, they form a complete pipeline:
 
 ```
-You → Claude Canvas (create visuals) → Social Media Manager (distribute) → 13+ Platforms
+You → Claude Creatives (create visuals) → Social Media Manager (distribute) → 13+ Platforms
 ```
 
 ---
@@ -48,8 +48,8 @@ Each skill is a complete workflow — concept to final deliverable — powered b
 ### 1. Clone this repo
 
 ```bash
-git clone https://github.com/Trejon-888/claude-canvas.git
-cd claude-canvas
+git clone https://github.com/Trejon-888/claude-creatives.git
+cd claude-creatives
 ```
 
 ### 2. Install Claude Code
@@ -60,12 +60,15 @@ Install the [Claude Code extension for VS Code](https://marketplace.visualstudio
 npm install -g @anthropic-ai/claude-code
 ```
 
-### 3. Get your API keys
+### 3. Add your KIE API key
 
-| Service | Purpose | Sign Up |
-|---------|---------|---------|
-| **KIE.ai** | AI image generation (thumbnails + carousels) | [kie.ai](https://kie.ai) |
-| **Late** | Media storage + social media posting | [getlate.dev](https://getlate.dev) |
+The repo includes a `.env` file. Open it and replace the placeholder with your key from [kie.ai](https://kie.ai):
+
+```
+KIE_API_KEY=your-actual-key-here
+```
+
+**Optional:** Add a [Late](https://getlate.dev) API key for media storage and social media posting.
 
 ### 4. Start creating
 
@@ -147,7 +150,7 @@ Build educational guide documents as clean HTML pages, convert to PDF, and extra
 
 If you also have the [IX AI Agent Social Media Manager](https://github.com/Trejon-888/ix-ai-agent-social-media-manager), the two systems work together seamlessly:
 
-**Creation flow (Claude Canvas):**
+**Creation flow (Claude Creatives):**
 ```
 create thumbnail  → generates 4K YouTube thumbnail
 create carousel   → generates 8-slide Instagram carousel
@@ -189,7 +192,7 @@ Both repos use **Late** as the bridge for media storage and multi-platform posti
 ## Project Structure
 
 ```
-claude-canvas/
+claude-creatives/
 ├── README.md                        # This file
 ├── CLAUDE.md                        # Instructions for Claude Code
 ├── setup.md                         # Step-by-step setup guide
@@ -229,8 +232,8 @@ Every project folder in `output/` uses the naming convention `YYYY-MM-DD-descrip
 
 ## FAQ
 
-**Q: Do I need Part 1 to use Claude Canvas?**
-A: No. Claude Canvas works standalone for creating visual content. Part 1 adds distribution capabilities (posting to social platforms).
+**Q: Do I need Part 1 to use Claude Creatives?**
+A: No. Claude Creatives works standalone for creating visual content. Part 1 adds distribution capabilities (posting to social platforms).
 
 **Q: How much does image generation cost?**
 A: KIE.ai charges ~$0.09-0.12 per image. A thumbnail session costs $0.12-0.36. A 6-slide carousel costs ~$0.54-0.72.

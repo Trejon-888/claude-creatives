@@ -1,4 +1,4 @@
-# Claude Canvas
+# Claude Creatives
 
 A Claude Code project with 3 skills for creating visual content: YouTube thumbnails, carousel images, and educational document carousels.
 
