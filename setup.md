@@ -35,7 +35,7 @@ If you don't already have one:
 Open a terminal and run:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/claude-canvas.git
+git clone https://github.com/Trejon-888/claude-canvas.git
 cd claude-canvas
 ```
 

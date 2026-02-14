@@ -48,7 +48,7 @@ Each skill is a complete workflow — concept to final deliverable — powered b
 ### 1. Clone this repo
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/claude-canvas.git
+git clone https://github.com/Trejon-888/claude-canvas.git
 cd claude-canvas
 ```
 
