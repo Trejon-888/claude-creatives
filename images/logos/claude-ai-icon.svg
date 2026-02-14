@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Claude AI Starburst — matches official logo: thin radiating rays -->
+  <g transform="translate(100,100)" stroke="#D4835F" stroke-linecap="round" fill="none">
+    <!-- ~14 thin rays radiating from center, varying lengths for organic feel -->
+    <line x1="0" y1="0" x2="0" y2="-52" stroke-width="4.5" transform="rotate(0)"/>
+    <line x1="0" y1="0" x2="0" y2="-44" stroke-width="4" transform="rotate(26)"/>
+    <line x1="0" y1="0" x2="0" y2="-50" stroke-width="4.5" transform="rotate(52)"/>
+    <line x1="0" y1="0" x2="0" y2="-42" stroke-width="4" transform="rotate(78)"/>
+    <line x1="0" y1="0" x2="0" y2="-48" stroke-width="4.5" transform="rotate(104)"/>
+    <line x1="0" y1="0" x2="0" y2="-44" stroke-width="4" transform="rotate(130)"/>
+    <line x1="0" y1="0" x2="0" y2="-52" stroke-width="4.5" transform="rotate(155)"/>
+    <line x1="0" y1="0" x2="0" y2="-42" stroke-width="4" transform="rotate(180)"/>
+    <line x1="0" y1="0" x2="0" y2="-50" stroke-width="4.5" transform="rotate(206)"/>
+    <line x1="0" y1="0" x2="0" y2="-44" stroke-width="4" transform="rotate(232)"/>
+    <line x1="0" y1="0" x2="0" y2="-48" stroke-width="4.5" transform="rotate(258)"/>
+    <line x1="0" y1="0" x2="0" y2="-42" stroke-width="4" transform="rotate(284)"/>
+    <line x1="0" y1="0" x2="0" y2="-50" stroke-width="4.5" transform="rotate(310)"/>
+    <line x1="0" y1="0" x2="0" y2="-44" stroke-width="4" transform="rotate(336)"/>
+  </g>
+</svg>
